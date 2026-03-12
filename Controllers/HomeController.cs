@@ -1,9 +1,11 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using desafio_codigo_groohub.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace desafio_codigo_groohub.Controllers;
 
+[Authorize]
 public class HomeController : Controller
 {
     public IActionResult Index()
