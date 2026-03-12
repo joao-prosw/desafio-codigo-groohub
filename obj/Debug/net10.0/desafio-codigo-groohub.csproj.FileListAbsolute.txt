@@ -431,6 +431,4 @@ D:\Projetos\desafio-codigo-groohub\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.S
 D:\Projetos\desafio-codigo-groohub\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
 D:\Projetos\desafio-codigo-groohub\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
 D:\Projetos\desafio-codigo-groohub\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
-D:\Projetos\desafio-codigo-groohub\bin\Debug\net10.0\package-lock.json
-D:\Projetos\desafio-codigo-groohub\bin\Debug\net10.0\package.json
 D:\Projetos\desafio-codigo-groohub\obj\Debug\net10.0\compressed\eianz1ftpm-{0}-b9sayid5wm-b9sayid5wm.gz
