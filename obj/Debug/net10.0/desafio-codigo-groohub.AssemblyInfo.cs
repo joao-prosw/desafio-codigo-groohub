@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("desafio-codigo-groohub")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b8efddd4134d7b187a806db86c7a8dfe82de6ff9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+be7579178c99d134ffa59c6ff0c9df6137f08dc4")]
 [assembly: System.Reflection.AssemblyProductAttribute("desafio-codigo-groohub")]
 [assembly: System.Reflection.AssemblyTitleAttribute("desafio-codigo-groohub")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
