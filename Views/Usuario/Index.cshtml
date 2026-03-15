@@ -6,32 +6,31 @@
     <h1 class="mb-5 text-center">@ViewData["Title"]</h1>
 
     <div class="d-flex flex-column">
-        <a class="btn btn-primary align-self-end" href="/Usuario/Create">Adicionar usuário</a>
+        <a class="btn btn-primary align-self-center align-self-md-end" href="/Usuario/Create">Adicionar usuário</a>
         <table class="table">
-        <thead>
-            <tr>
-                <th>Nome de usuário</th>
-                <th>Email</th>
-                <th>Ações</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var user in Model)
-            {
+            <thead>
                 <tr>
-                    <td>@user.UserName</td>
-                    <td>@user.Email</td>
-                    <td>
-                        <a class="btn btn-sm btn-outline-primary" asp-action="Edit" asp-route-id="@user.Id">Editar</a>
-                        <a class="btn btn-sm btn-outline-info" asp-action="Details" asp-route-id="@user.Id">Detalhes</a>
-                        <form asp-action="Delete" asp-route-id="@user.Id" method="post" style="display:inline">
-                            <button type="submit" class="btn btn-sm btn-outline-danger">Excluir</button>
-                        </form>
-                    </td>
+                    <th>Nome de usuário</th>
+                    <th>Email</th>
+                    <th>Ações</th>
                 </tr>
-            }
-        </tbody>
-    </table>
-    </table>
+            </thead>
+            <tbody>
+                @foreach (var user in Model)
+                {
+                    <tr>
+                        <td>@user.UserName</td>
+                        <td>@user.Email</td>
+                        <td class="d-flex flex-column flex-md-row align-items-center gap-2">
+                            <a class="btn btn-sm btn-outline-primary" asp-action="Edit" asp-route-id="@user.Id">Editar</a>
+                            <a class="btn btn-sm btn-outline-info" asp-action="Details" asp-route-id="@user.Id">Detalhes</a>
+                            <form asp-action="Delete" asp-route-id="@user.Id" method="post" style="display:inline">
+                                <button type="submit" class="btn btn-sm btn-outline-danger">Excluir</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
     </div>
 </div>

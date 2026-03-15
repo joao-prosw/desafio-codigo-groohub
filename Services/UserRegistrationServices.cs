@@ -15,7 +15,6 @@ namespace desafio_codigo_groohub.Services
             _userManager = userManager;
         }
 
-        // CREATE
         public async Task<IdentityResult> RegisterAsync(string userName, string email, string password)
         {
             var user = new IdentityUser
@@ -26,13 +25,11 @@ namespace desafio_codigo_groohub.Services
             return await _userManager.CreateAsync(user, password);
         }
 
-        // READ
         public IList<IdentityUser> GetAll() => _userManager.Users.ToList();
 
         public async Task<IdentityUser?> GetByIdAsync(string id)
             => await _userManager.FindByIdAsync(id);
 
-        // UPDATE
         public async Task<IdentityResult> UpdateAsync(string id, string userName, string email)
         {
             var user = await _userManager.FindByIdAsync(id);
@@ -44,7 +41,6 @@ namespace desafio_codigo_groohub.Services
             return await _userManager.UpdateAsync(user);
         }
 
-        // DELETE
         public async Task<IdentityResult> DeleteAsync(string id)
         {
             var user = await _userManager.FindByIdAsync(id);

@@ -19,6 +19,7 @@ namespace desafio_codigo_groohub.Models
         public string Email { get; set; }
         
         [DataType(DataType.Password)]
+        [StringLength(100, ErrorMessage = "A {0} precisa ter entre {2} e {1} caracteres.", MinimumLength = 6)]
         public string? Password { get; set; }
     }
 }
